@@ -4,7 +4,7 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/childe/healer"
+	"github.com/dukeann/healer"
 )
 
 var (

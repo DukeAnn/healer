@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/childe/healer"
+	"github.com/dukeann/healer"
 	"github.com/golang/glog"
 )
 

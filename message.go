@@ -8,10 +8,12 @@ import (
 	"hash/crc32"
 	"io"
 	"io/ioutil"
+	"sync"
 
-	lz4 "github.com/bkaradzic/go-lz4"
+	//lz4 "github.com/bkaradzic/go-lz4"
 	snappy "github.com/eapache/go-xerial-snappy"
 	"github.com/golang/glog"
+	"github.com/pierrec/lz4"
 )
 
 /*
@@ -67,6 +69,12 @@ const (
 	COMPRESSION_LZ4    int8 = 3
 )
 
+var lz4ReaderPool = sync.Pool{
+	New: func() interface{} {
+		return lz4.NewReader(nil)
+	},
+}
+
 func (message *Message) decompress() ([]byte, error) {
 	compression := message.Attributes & 7
 	var rst []byte
@@ -84,7 +92,11 @@ func (message *Message) decompress() ([]byte, error) {
 	case COMPRESSION_SNAPPY:
 		return snappy.Decode(message.Value)
 	case COMPRESSION_LZ4:
-		return lz4.Decode(nil, message.Value)
+		reader := lz4ReaderPool.Get().(*lz4.Reader)
+		defer lz4ReaderPool.Put(reader)
+
+		reader.Reset(bytes.NewReader(message.Value))
+		return ioutil.ReadAll(reader)
 	}
 	return nil, fmt.Errorf("Unknown Compression Code %d", compression)
 }

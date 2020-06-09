@@ -12,7 +12,7 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"github.com/childe/healer"
+	"github.com/dukeann/healer"
 	"github.com/golang/glog"
 )
 

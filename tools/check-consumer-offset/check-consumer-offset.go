@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/childe/healer"
+	"github.com/dukeann/healer"
 	"github.com/golang/glog"
 )
 
