@@ -355,7 +355,7 @@ func (broker *Broker) requestStreamingly(ctx context.Context, payload []byte, bu
 func (broker *Broker) requestApiVersions(clientID string) (*ApiVersionsResponse, error) {
 	// TODO should always use v0?
 	//apiVersionRequest := NewApiVersionsRequest(0, clientID)
-	apiVersionRequest := NewApiVersionsRequest(1, clientID)
+	apiVersionRequest := NewApiVersionsRequest(2, clientID)
 	response, err := broker.Request(apiVersionRequest)
 	if err != nil {
 		return nil, err
