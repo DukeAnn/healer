@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"strings"
 
-	"github.com/dukeann/healer"
+	"github.com/DukeAnn/healer"
 	"github.com/golang/glog"
 )
 

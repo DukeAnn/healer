@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/dukeann/healer"
+	"github.com/DukeAnn/healer"
 )
 
 var (

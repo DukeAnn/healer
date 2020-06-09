@@ -1,13 +1,5 @@
-github.com/DukeAnn/healer v0.1.2 h1:Zn3rMO2GMHOXzIMMtJE9t6fZDLKLlBnL1rsbclPxduQ=
-github.com/DukeAnn/healer v0.1.2/go.mod h1:CpjmLvgE1ZcvuFbFxVnvUhV/fVi1QXW4DNn7t0MSmGE=
 github.com/aviddiviner/go-murmur v0.0.0-20150519214947-b9740d71e571 h1:seCdAEDyB0Hti/v1VajB7pAOIk9zmz/0/KE0D0oFqnc=
 github.com/aviddiviner/go-murmur v0.0.0-20150519214947-b9740d71e571/go.mod h1:VzSzsYCY3W9xWYWD8T2GLDidWTe5rTZv+UdDMGhLfjg=
-github.com/bkaradzic/go-lz4 v1.0.0 h1:RXc4wYsyz985CkXXeX04y4VnZFGG8Rd43pRaHsOXAKk=
-github.com/bkaradzic/go-lz4 v1.0.0/go.mod h1:0YdlkowM3VswSROI7qDxhRvJ3sLhlFrRRwjwegp5jy4=
-github.com/childe/healer v0.1.2 h1:vXa+ZKg0CVG+jN6VUGDQat4QoHaFA0zaeorUIHpwHW0=
-github.com/childe/healer v0.1.2/go.mod h1:ljvP4Pzj3Iu24CdJzEIG+YQtRRpSyCtZQrwFDx/niXg=
-github.com/dukeann/healer v0.1.2 h1:4R9CgatHeKgNXMnBBa9UAiJ2ZVwKNoUYcWVMzzdiJOo=
-github.com/dukeann/healer v0.1.2/go.mod h1:+wwGn8hIOhyGJVb3B9QJgVm7q5+FvTq/47F1fqMU/S0=
 github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21 h1:YEetp8/yCZMuEPMUDHG0CW/brkkEp8mzqk2+ODEitlw=
 github.com/eapache/go-xerial-snappy v0.0.0-20180814174437-776d5712da21/go.mod h1:+020luEh2TKB4/GOp8oxxtq0Daoen/Cii55CzbTV6DU=
 github.com/frankban/quicktest v1.10.0 h1:Gfh+GAJZOAoKZsIZeZbdn2JF10kN1XHNvjsvQK8gVkE=
